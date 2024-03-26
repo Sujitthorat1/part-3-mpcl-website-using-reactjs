@@ -50,15 +50,15 @@ function VideoPlayCards() {
                     // Paused overlay when video is not playing
                     pausedOverlay={
                         <div>
-                            <img
+                            {/* <img
                                 src="thumbnail-image.jpg"
-                                alt=""
+                                alt={video.title}
                                 style={{
                                     width: '100%',
                                     height: '100%',
                                     objectFit: 'cover',
                                 }}
-                            />
+                            /> */}
                             <div className="videoTitle">
                                 <p className="title">{video.title}</p>
                             </div>
