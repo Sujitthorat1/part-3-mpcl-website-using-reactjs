@@ -1,0 +1,41 @@
+.openings {
+    background-color: #8dc73f;
+    color: white;
+    z-index: 100;
+
+    .openingCard {
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: max-content;
+        }
+
+        @media screen and (min-width: 769px) {
+            display: flex;
+            width: max-content;
+        }
+
+        .careerOpenings {
+            width: 50%;
+            height: max-content;
+        }
+
+        .prerequisite {
+            @media screen and (max-width: 768px) {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            @media screen and (min-width: 769px) {
+                margin-left: auto;
+                width: max-content;
+            }
+
+            text-align: start;
+            align-content: end;
+        }
+    }
+}
+
+li {
+    list-style: circle;
+}

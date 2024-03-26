@@ -1,0 +1,59 @@
+// bgVideoPlayCards.scss
+$primary-color: #3498db; // Change this to your desired primary color
+$secondary-color: #2ecc71; // Change this to your desired secondary color
+
+.videoCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; // Adjust as needed
+}
+
+.cardVid {
+    width: calc(50% - 0px); 
+// Adjust as needed to compensate for removed margins
+// You can adjust this if you still want some bottom margin
+    position: relative;
+
+    &:hover {
+        .bgVideoPlayCardWrapper {
+            opacity: 1;
+        }
+    }
+
+    .bgVideoPlayCardWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

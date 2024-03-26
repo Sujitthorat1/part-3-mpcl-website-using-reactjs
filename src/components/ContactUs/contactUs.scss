@@ -1,0 +1,60 @@
+.mainContactUs {
+    background-color: antiquewhite;
+}
+
+.contactUs {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    ;
+    // padding: 0px;
+    display: flex;
+    // border: 1px solid #0b0404;
+    align-content: center;
+    align-items: start;
+
+    .contactForm {
+        width: 100%;
+        height: 466px;
+        background-color: rgb(228, 252, 252);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location {
+        width: 100%;
+        height: 100%;
+        // background-color: yellow;
+        background-color: rgb(228, 252, 252);
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .contactUs {
+        padding-top: 2rem;
+        // margin: 0px;
+        // padding: 0px;
+        display: block;
+        // border: 1px solid #0b0404;
+        align-content: center;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactUs {
+        padding-top: 2rem;
+        // margin: 0px;
+        // padding: 0px;
+        display: block;
+        // border: 1px solid #0b0404;
+        align-content: center;
+        align-items: start;
+    }
+
+}

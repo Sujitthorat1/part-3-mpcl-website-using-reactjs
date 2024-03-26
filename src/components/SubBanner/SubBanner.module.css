@@ -1,0 +1,115 @@
+.imgbox {
+    width: 100%;
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    width: max-content;
+    height: max-content;
+    border-radius: 2%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+}
+.center:hover{
+
+            opacity: 1.0;
+      
+}
+
+.head {
+    font-size: 50px;
+    color: #fefefe;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.subHead {
+    font-size: 16px;
+    color: #fefefe;
+}
+
+@media screen and (max-width: 1080px) {
+    .imgbox {
+        height: 50vh;
+
+    }
+
+    .head {
+        font-size: 40px;
+    }
+
+    .center {
+        top: 37%;
+        width: 440px;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imgbox {
+        height: 40vh;
+    }
+
+    .head {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .subHead {
+        font-size: 15px;
+    }
+
+    .center {
+        top: 32%;
+        width: 440px;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imgbox {
+        height: 30vh;
+    }
+
+    .head {
+        font-size: 26px;
+    }
+
+    .subHead {
+        font-size: 14px;
+    }
+
+    .center {
+        top: 24%;
+        width: 440px;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .imgbox {
+        height: 25vh;
+    }
+
+    .head {
+        font-size: 20px;
+    }
+
+    .subHead {
+        font-size: 13px;
+    }
+
+    .center {
+        top: 20%;
+        width: 240px;
+        height: max-content;
+    }
+}

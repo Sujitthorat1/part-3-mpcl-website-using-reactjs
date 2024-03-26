@@ -1,0 +1,17 @@
+div {
+    .aboutMidContent {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        .lastText{
+            background-color: pink;
+            border-radius: .2rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            margin-top: 2rem;
+        }
+
+    }
+}

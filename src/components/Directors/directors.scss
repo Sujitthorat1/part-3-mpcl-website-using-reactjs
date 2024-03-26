@@ -1,0 +1,104 @@
+.testimonials {
+    padding: 80px 0;
+    background: url("../../assets/img/testimonials-bg.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .swiper-pagination {
+        margin-top: 20px;
+        position: relative;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            opacity: 1;
+
+            &-active {
+                background-color: #ff5821;
+            }
+        }
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .testimonials-carousel,
+    .testimonials-slider {
+        overflow: hidden;
+    }
+
+    .testimonial-item {
+        text-align: center;
+        color: #fff;
+
+        .testimonial-img {
+            width: 100px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.15);
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: #fff;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: #ddd;
+            margin: 0 0 15px 0;
+        }
+
+        .quote-icon-left,
+        .quote-icon-right {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 26px;
+
+            &-left {
+                display: inline-block;
+                left: -5px;
+                position: relative;
+            }
+
+            &-right {
+                display: inline-block;
+                right: -5px;
+                position: relative;
+                top: 10px;
+            }
+        }
+
+        p {
+            font-style: italic;
+            margin: 0 auto 15px auto;
+            color: #eee;
+            @media (max-width: 720px) {
+                width: 80%;
+                font-size: 12px;
+            }
+
+            @media (min-width: 721px) {
+                font-size: 16px; 
+            }
+        }
+    }
+}
+
+.card {
+    border-radius: 10%;
+}

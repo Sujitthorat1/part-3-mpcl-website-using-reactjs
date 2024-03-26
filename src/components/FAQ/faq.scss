@@ -1,0 +1,122 @@
+:root {
+    --PrimaryColor: hsl(16, 100%, 66%);
+    --SecondaryColor: hsl(239, 100%, 15%);
+    --gradientColor: linear-gradient(to right, hsla(235, 90%, 72%, 0.336), hsl(212, 100%, 50%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 0%);
+    --textColor: hsl(240, 2%, 22%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBg: rgba(242, 222, 236, 0.992);
+    --background-color: #f6f6f6;
+    --foreground-color: #003cff;
+    --primary-text-color: #0a0a0a;
+    --secondary-text-color: #ffffff;
+    --toggle-bg: #f0eb9d;
+    --toggle-fg: #ffd000;
+}
+
+.faqContainer {
+    background-color: rgb(251, 244, 245);
+    padding-top: 10px;
+}
+
+.faq {
+    padding-bottom: 80px;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2 {
+            color: var(--PrimaryColor);
+        }
+
+        p {
+            color: var(--textColor);
+        }
+
+    }
+
+    .faq-list {
+        padding: 0 100px;
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li+li {
+            margin-top: 15px;
+        }
+
+        li {
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+            position: relative;
+
+            a {
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                padding: 0 30px;
+                outline: none;
+                cursor: pointer;
+                color: #333;
+
+                .icon-help {
+                    font-size: 20px;
+                    margin-right: 10px; // Adjust the margin for spacing
+                    color: #ffb8a1;
+                }
+
+                .icon-show,
+                .icon-close {
+                    font-size: 24px;
+                    margin-left: auto; // Push the icons to the right
+                    transition: transform 0.3s ease;
+                }
+
+                &.collapsed {
+                    color: #343a40;
+
+                    &:hover {
+                        color: #ff5821;
+                    }
+
+                    .icon-show {
+                        transform: translateY(-50%) rotate(-180deg);
+                    }
+
+                    .icon-close {
+                        display: none;
+                    }
+                }
+            }
+
+            div {
+                padding: 10px 0;
+                border-top: 1px solid #ddd;
+                margin-top: 10px;
+
+                p {
+                    margin-bottom: 0;
+                    padding-left: 5%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .faq-list {
+            padding: 0;
+        }
+    }
+}
