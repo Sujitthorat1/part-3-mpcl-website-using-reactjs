@@ -121,7 +121,6 @@ const NavbarMain = () => {
               >
                 <NavDropdown.Item className={styles.dropdownItem}><Link to="/about/history" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>History</Link></NavDropdown.Item>
                 <NavDropdown.Item className={styles.dropdownItem}><Link to="/about/career" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>Career</Link></NavDropdown.Item>
-
                 <NavDropdown.Item className={styles.dropdownItem}><Link to="/about" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>Team</Link></NavDropdown.Item>
 
               </NavDropdown>
