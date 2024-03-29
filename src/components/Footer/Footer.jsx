@@ -66,7 +66,7 @@ const Footer = () => {
             {/* Group first */}
             <div data-aos="fade-up" data-aos-duration="3000" className="linkGroup">
               <span className="groupTitle">
-                OUR COMPANY
+                Services
               </span>
 
               <li className="footerList flex">
@@ -99,7 +99,7 @@ const Footer = () => {
             <div data-aos="fade-up"
               data-aos-duration="4000" className="linkGroup">
               <span className="groupTitle">
-                Address 1
+                Services
               </span>
 
               <li className="footerList flex">
@@ -131,7 +131,7 @@ const Footer = () => {
             {/* Group  third */}
             <div data-aos="fade-up" data-aos-duration="5000" className="linkGroup">
               <span className="groupTitle">
-                Address 2
+               Services
               </span>
 
               <li className="footerList flex">
@@ -164,7 +164,7 @@ const Footer = () => {
             <div data-aos="fade-up"
               data-aos-duration="6000" className="linkGroup">
               <span className="groupTitle">
-                Address 3
+                Services
               </span>
 
               <li className="footerList flex">

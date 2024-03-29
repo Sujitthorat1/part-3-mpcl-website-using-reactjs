@@ -119,9 +119,10 @@ const NavbarMain = () => {
                 }
                 id="basic-nav-dropdown-about"
               >
-                <NavDropdown.Item className={styles.dropdownItem}><Link to="/about/team" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>Team</Link></NavDropdown.Item>
                 <NavDropdown.Item className={styles.dropdownItem}><Link to="/about/history" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>History</Link></NavDropdown.Item>
                 <NavDropdown.Item className={styles.dropdownItem}><Link to="/about/career" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>Career</Link></NavDropdown.Item>
+
+                <NavDropdown.Item className={styles.dropdownItem}><Link to="/about" onClick={() => { handleActiveNav(1); closeNav() }} className={styles.dropdownText}>Team</Link></NavDropdown.Item>
 
               </NavDropdown>
 
